@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "BillingJob"
+  datasource:
+    url: ${DBMS_CONNECTION:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DBMS_USERNAME:postgres}
+    password: ${DBMS_PASSWORD:postgres}
+    driver-class-name: ${DBMS_DRIVER_CLASS_NAME:org.postgresql.Driver}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
